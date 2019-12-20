@@ -8,8 +8,8 @@ public class Boss {
 
 	// mpを消費して魔法攻撃をする関数
 	public void Magic(int consumption) { 
-		this.mp -= consumption;
-		if (mp > 0) {
+		if (mp > 4) {
+			this.mp -= consumption;
 			Debug.Log( "魔法攻撃をした。残りMPは" + this.mp + "。");
 		} else {
 			Debug.Log( "MPが足りないため魔法が使えない。");
